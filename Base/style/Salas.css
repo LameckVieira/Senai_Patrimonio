@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: #4469DB;
+    width: 100%;
+    height: 100vh;
+}
+.content{
+    width: 1216px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.imgheader_salas{
+    width: 220px;
+    height: 56px;
+    margin-left: 100px; 
+}
+.salas_img{
+    width: 40px;
+    height: 35px;
+    background: url('./img/outline_logout_white_24dp\ 1.png');
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.25);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sair{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.sair button{
+    margin-right: 50px;
+}
+.equipamentos_salas_button{
+    background: #ffffff;
+    border-radius: 5px;
+    width: 160px;
+    height: 53px;
+    color: #4469DB;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.equipamentos_salas_button:hover{
+    background-color: #d2ddff;
+    transition: 300ms;
+}
+.cadastrolist_salas{
+    display: flex;
+}
+.cadastro_salas{
+    width: 464px;
+    height: 303px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.lista_salas{
+    width: 463px;
+    height: 303px;
+    background-color: white;
+}
+.pesquisar_salas{
+    width: 649px;
+    height: 730px;
+    background-color: white;
+}
