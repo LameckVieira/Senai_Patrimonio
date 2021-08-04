@@ -26,7 +26,7 @@
     "optimize": false,
     "keyFile": "",
     "emitEntryPoint": true,
-    "xmlDoc": false,
+    "xmlDoc": true,
     "debugType": "portable"
   },
   "targets": {
@@ -200,7 +200,6 @@
           "System": "4.0.0.0",
           "System.Drawing": "4.0.0.0",
           "System.Drawing.Primitives": "5.0.0.0",
-          "System.Dynamic.Runtime": "5.0.0.0",
           "System.Formats.Asn1": "5.0.0.0",
           "System.Globalization.Calendars.Reference": "5.0.0.0",
           "System.Globalization.Reference": "5.0.0.0",
@@ -251,12 +250,9 @@
           "System.Reflection.Emit.ILGeneration.Reference": "5.0.0.0",
           "System.Reflection.Emit.Lightweight.Reference": "5.0.0.0",
           "System.Reflection.Extensions.Reference": "5.0.0.0",
-          "System.Reflection.Metadata": "5.0.0.0",
           "System.Reflection.Primitives.Reference": "5.0.0.0",
           "System.Reflection.TypeExtensions.Reference": "5.0.0.0",
           "System.Resources.Reader": "5.0.0.0",
-          "System.Resources.ResourceManager.Reference": "5.0.0.0",
-          "System.Resources.Writer": "5.0.0.0",
           "System.Runtime.CompilerServices.Unsafe": "5.0.0.0",
           "System.Runtime.CompilerServices.VisualC": "5.0.0.0",
           "System.Runtime.Reference": "5.0.0.0",
@@ -2692,12 +2688,6 @@
         },
         "compileOnly": true
       },
-      "System.Dynamic.Runtime/5.0.0.0": {
-        "compile": {
-          "System.Dynamic.Runtime.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Formats.Asn1/5.0.0.0": {
         "compile": {
           "System.Formats.Asn1.dll": {}
@@ -2998,12 +2988,6 @@
         },
         "compileOnly": true
       },
-      "System.Reflection.Metadata/5.0.0.0": {
-        "compile": {
-          "System.Reflection.Metadata.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Reflection.Primitives.Reference/5.0.0.0": {
         "compile": {
           "System.Reflection.Primitives.dll": {}
@@ -3019,18 +3003,6 @@
       "System.Resources.Reader/5.0.0.0": {
         "compile": {
           "System.Resources.Reader.dll": {}
-        },
-        "compileOnly": true
-      },
-      "System.Resources.ResourceManager.Reference/5.0.0.0": {
-        "compile": {
-          "System.Resources.ResourceManager.dll": {}
-        },
-        "compileOnly": true
-      },
-      "System.Resources.Writer/5.0.0.0": {
-        "compile": {
-          "System.Resources.Writer.dll": {}
         },
         "compileOnly": true
       },
@@ -5206,11 +5178,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Dynamic.Runtime/5.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Formats.Asn1/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -5461,11 +5428,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection.Metadata/5.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Reflection.Primitives.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -5477,16 +5439,6 @@
       "sha512": ""
     },
     "System.Resources.Reader/5.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Resources.ResourceManager.Reference/5.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Resources.Writer/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai_Patrimonio_API</name>
+    </assembly>
+    <members>
+        <member name="P:Senai_Patrimonio_API.Controllers.EquipamentosController._equipamentoRepository">
+            <summary>
+            Cria um objeto _EquipamentoRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.EquipamentosController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.EquipamentosController.Post(Senai_Patrimonio_API.Domains.Equipamento)">
+            <summary>
+            Cadastra um novo equipamento
+            </summary>
+            <param name="novoEquipamento">Objeto clinica a ser cadastrado</param>
+            <returns>Um StatusCode 201 - Created</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.EquipamentosController.Get">
+            <summary>
+            Lista todos equipamentos existentes
+            </summary>
+            <returns>Uma lista dos equipamentos e um statusCode 200 - Ok</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.EquipamentosController.GetById(System.Int32)">
+            <summary>
+            Busca um equipamento pelo seu id
+            </summary>
+            <param name="id">Id do equipamento buscada</param>
+            <returns>Um equipamento buscado e um StatusCode 200 - Ok</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.EquipamentosController.Put(System.Int32,Senai_Patrimonio_API.Domains.Equipamento)">
+            <summary>
+            Atualiza um equipamento existente
+            </summary>
+            <param name="id">Id do equipamento a ser atualizada</param>
+            <param name="equipamentoAtualizado">Objeto equipamentoAtualizado com as novas informações</param>
+            <returns>Um StatusCode 204 - No Content</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.EquipamentosController.Delete(System.Int32)">
+            <summary>
+            Deleta um equipamento existente
+            </summary>
+            <param name="id">Id do equipamento a ser deletada</param>
+            <returns>Um StatusCode 204 - No Content</returns>
+        </member>
+        <member name="P:Senai_Patrimonio_API.Controllers.LoginController._usuarioRepository">
+            <summary>
+            Cria um objeto _usuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.LoginController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.LoginController.Post(Senai_Patrimonio_API.ViewModels.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+            dominio/api/Login
+        </member>
+        <member name="P:Senai_Patrimonio_API.Controllers.SalasController._salaRepository">
+            <summary>
+            Cria um objeto _salaRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.SalasController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.SalasController.Post(Senai_Patrimonio_API.Domains.Sala)">
+            <summary>
+            Cadastra um nova sala
+            </summary>
+            <param name="novaSala">Objeto sala a ser cadastrado</param>
+            <returns>Um StatusCode 201 - Created</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.SalasController.Get">
+            <summary>
+            Lista todas salas existentes
+            </summary>
+            <returns>Uma lista das salas e um statusCode 200 - Ok</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.SalasController.GetById(System.Int32)">
+            <summary>
+            Busca uma sala pelo seu id
+            </summary>
+            <param name="id">Id da sala buscada</param>
+            <returns>Uma sala buscada e um StatusCode 200 - Ok</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.SalasController.Put(System.Int32,Senai_Patrimonio_API.Domains.Sala)">
+            <summary>
+            Atualiza uma sala existente
+            </summary>
+            <param name="id">Id da sala a ser atualizada</param>
+            <param name="salaAtualizada">Objeto salaAtualizada com as novas informações</param>
+            <returns>Um StatusCode 204 - No Content</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Controllers.SalasController.Delete(System.Int32)">
+            <summary>
+            Deleta uma sala existente
+            </summary>
+            <param name="id">Id da sala a ser deletada</param>
+            <returns>Um StatusCode 204 - No Content</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Uma lista de usuários</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Um usuário buscado</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IUsuarioRepository.Cadastrar(Senai_Patrimonio_API.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="email">e-mail do usuário</param>
+            <param name="senha">senha do usuário</param>
+            <returns>Um objeto do tipo Usuario que foi buscado</returns>
+        </member>
+    </members>
+</doc>

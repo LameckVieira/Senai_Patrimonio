@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -39,7 +40,7 @@ namespace Senai_Patrimonio_API
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "HROADS.webApi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "patrimonio.webApi", Version = "v1" });
 
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -72,16 +73,16 @@ namespace Senai_Patrimonio_API
                         ValidateLifetime = true,
 
                         //forma de criptografia
-                        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("hroads-chave-autenticacao")),
+                        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("patrimonio-chave-autenticacao")),
 
                         //tempo de expiração do token
                         ClockSkew = TimeSpan.FromMinutes(30),
 
                         //nome do issuer, de onde está vindo
-                        ValidIssuer = "HROADS.webApi",
+                        ValidIssuer = "patrimonio.webApi",
 
                         //nome do audience, de onde está indo
-                        ValidAudience = "HROADS.webApi"
+                        ValidAudience = "patrimonio.webApi"
                     };
                 });
         }
@@ -105,7 +106,7 @@ namespace Senai_Patrimonio_API
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "HROADS.webApi");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "patrimonio.webApi");
                 c.RoutePrefix = string.Empty;
             });
 

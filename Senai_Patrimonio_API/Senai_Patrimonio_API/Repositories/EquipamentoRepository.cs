@@ -90,7 +90,26 @@ namespace Senai_Patrimonio_API.Repositories
 
         public List<Equipamento> Listar()
         {
-            
+            return ctx.Equipamentos
+                .Select(e => new Equipamento()
+                {
+                    IdEquipamento = e.IdEquipamento,
+                    Descricao = e.Descricao,
+                    Marca = e.Marca,
+                    Tipo = e.Tipo,
+                    Estado = e.Estado,
+                    Patrimonio = e.Patrimonio,
+                    Serie = e.Serie,
+
+                    IdSalaNavigation = new Sala()
+                    {
+                        IdSala = e.IdSalaNavigation.IdSala,
+                        Nome = e.IdSalaNavigation.Nome,
+                        Andar = e.IdSalaNavigation.Andar,
+                        Metragem = e.IdSalaNavigation.Metragem,
+                    }
+                })
+                .ToList();
         }
     }
 }

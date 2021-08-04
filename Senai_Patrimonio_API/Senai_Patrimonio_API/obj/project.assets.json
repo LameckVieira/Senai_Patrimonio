@@ -7534,19 +7534,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dev\\.nuget\\packages\\": {}
+    "C:\\Users\\familia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev\\source\\repos\\Senai_Patrimonio_API\\Senai_Patrimonio_API\\Senai_Patrimonio_API.csproj",
+      "projectUniqueName": "C:\\Users\\familia\\Desktop\\Senai_Patrimonio\\Senai_Patrimonio_API\\Senai_Patrimonio_API\\Senai_Patrimonio_API.csproj",
       "projectName": "Senai_Patrimonio_API",
-      "projectPath": "C:\\Users\\dev\\source\\repos\\Senai_Patrimonio_API\\Senai_Patrimonio_API\\Senai_Patrimonio_API.csproj",
-      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dev\\source\\repos\\Senai_Patrimonio_API\\Senai_Patrimonio_API\\obj\\",
+      "projectPath": "C:\\Users\\familia\\Desktop\\Senai_Patrimonio\\Senai_Patrimonio_API\\Senai_Patrimonio_API\\Senai_Patrimonio_API.csproj",
+      "packagesPath": "C:\\Users\\familia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\familia\\Desktop\\Senai_Patrimonio\\Senai_Patrimonio_API\\Senai_Patrimonio_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\familia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7621,7 +7621,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
       }
     }
   }
