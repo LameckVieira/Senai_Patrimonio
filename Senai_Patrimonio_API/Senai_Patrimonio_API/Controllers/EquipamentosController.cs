@@ -80,8 +80,6 @@ namespace Senai_Patrimonio_API.Controllers
             try
             {
                 return Ok(_equipamentoRepository.BuscarPorId(id));
-
-
             }
             catch (Exception erro)
             {

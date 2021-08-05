@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "68d47641-fbab-4bb2-aea9-6b9244f87367",
+		"name": "Senai_Patrimonios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuario.Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"admin@admin.com\",\r\n    \"senha\" : \"admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipamento",
+			"item": [
+				{
+					"name": "Equipamento.Listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTU4NjYsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ.0wTa9Yyx4aNtkQG1pAlSBzOts7y4JMkschI5SLlzO-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/equipamentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"equipamentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Equipamento.Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTU4NjYsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ.0wTa9Yyx4aNtkQG1pAlSBzOts7y4JMkschI5SLlzO-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idSala\": 1,\r\n    \"marca\": \"HP\",\r\n    \"tipo\": \"NoteBook\",\r\n    \"serie\": 2569125,\r\n    \"descricao\": \"HP Core i10\",\r\n    \"patrimonio\": 564485,\r\n    \"estado\": \"Ativo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/equipamentos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"equipamentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Equipamento.Atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTU4NjYsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ.0wTa9Yyx4aNtkQG1pAlSBzOts7y4JMkschI5SLlzO-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idSala\": 1,\r\n    \"marca\": \"HP\",\r\n    \"tipo\": \"NoteBook\",\r\n    \"serie\": 2569125,\r\n    \"descricao\": \"HP Core i10\",\r\n    \"patrimonio\": 564485,\r\n    \"estado\": \"Inativo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/equipamentos/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"equipamentos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Equipamento.Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTU4NjYsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ.0wTa9Yyx4aNtkQG1pAlSBzOts7y4JMkschI5SLlzO-8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/equipamentos/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"equipamentos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Equipamento.BuscarPorId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTgzNTUsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ._dMYNoPotQpqZwteke7ceLrsIq7ZC2Y8vzyWtaJr47Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/equipamentos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"equipamentos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sala",
+			"item": [
+				{
+					"name": "Sala.Listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTgzNTUsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ._dMYNoPotQpqZwteke7ceLrsIq7ZC2Y8vzyWtaJr47Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/salas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"salas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sala.BuscarPorId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTgzNTUsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ._dMYNoPotQpqZwteke7ceLrsIq7ZC2Y8vzyWtaJr47Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/salas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"salas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sala.Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTgzNTUsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ._dMYNoPotQpqZwteke7ceLrsIq7ZC2Y8vzyWtaJr47Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"nome\": \"Sala Dev´s\",\r\n    \"andar\": 14,\r\n    \"metragem\": 75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/salas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"salas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sala.Atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTgzNTUsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ._dMYNoPotQpqZwteke7ceLrsIq7ZC2Y8vzyWtaJr47Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"nome\": \"Sala Dev´s\",\r\n    \"andar\": 21,\r\n    \"metragem\": 47\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/salas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"salas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sala.Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE2MjgxMTgzNTUsImlzcyI6InBhdHJpbW9uaW8ud2ViQXBpIiwiYXVkIjoicGF0cmltb25pby53ZWJBcGkifQ._dMYNoPotQpqZwteke7ceLrsIq7ZC2Y8vzyWtaJr47Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/salas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"salas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

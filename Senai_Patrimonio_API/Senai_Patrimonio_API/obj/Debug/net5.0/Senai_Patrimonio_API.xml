@@ -112,6 +112,70 @@
             <param name="id">Id da sala a ser deletada</param>
             <returns>Um StatusCode 204 - No Content</returns>
         </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IEquipamentoRepository.Listar">
+            <summary>
+            Lista os equipamentos cadastrados
+            </summary>
+            <returns>Uma lista de equipamentos</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IEquipamentoRepository.Cadastrar(Senai_Patrimonio_API.Domains.Equipamento)">
+            <summary>
+            Cadastra uma nova sala
+            </summary>
+            <param name="novaSala">Objeto equipamento</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IEquipamentoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta uma sala existente 
+            </summary>
+            <param name="id">id da sala a ser deletada</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IEquipamentoRepository.Atualizar(System.Int32,Senai_Patrimonio_API.Domains.Equipamento)">
+            <summary>
+            Atualiza uma sala existente
+            </summary>
+            <param name="id">id da sala a ser atualizada</param>
+            <param name="salaAtualizada">objeto salaAtualizada com os novos valores</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.IEquipamentoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um equipamento pelo seu id 
+            </summary>
+            <param name="id">id do equipamento a ser buscado</param>
+            <returns>Um equipamento buscado</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.ISalaRepository.Listar">
+            <summary>
+            Lista todas as salas
+            </summary>
+            <returns>Uma lista de salas</returns>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.ISalaRepository.Cadastrar(Senai_Patrimonio_API.Domains.Sala)">
+            <summary>
+            Cadastra uma nova sala
+            </summary>
+            <param name="novaSala">Objeto novaSala que será cadastrado</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.ISalaRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta uma sala existente
+            </summary>
+            <param name="id">ID da sala que será deletada</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.ISalaRepository.Atualizar(System.Int32,Senai_Patrimonio_API.Domains.Sala)">
+            <summary>
+            Atualiza uma sala existente
+            </summary>
+            <param name="id">Id da sala que será atualizada</param>
+            <param name="salaAtualizada">Objeto salaAtualizada que receberá os novos valores</param>
+        </member>
+        <member name="M:Senai_Patrimonio_API.Interfaces.ISalaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Buscar uma sala por seu id
+            </summary>
+            <param name="id">id da sala a ser buscada</param>
+            <returns>uma sala buscada</returns>
+        </member>
         <member name="M:Senai_Patrimonio_API.Interfaces.IUsuarioRepository.Listar">
             <summary>
             Lista todos os usuários
